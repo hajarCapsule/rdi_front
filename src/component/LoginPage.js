@@ -26,7 +26,7 @@ function LoginPage(props) {
   var handleSubmitSignup = async () => {
 
     //ENVOIE DES INFOS AU BACK POUR INSCRIPTION D'UN USER//
-    const data = await fetch('http://polar-harbor-30765.herokuapp.com/sign-up', {
+    const data = await fetch('/sign-up', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: `lastnameFromFront=${lastNameSignUp}&emailFromFront=${emailSignUp}&roomNumberFromFront=${roomNumberSignUp}`
@@ -50,7 +50,7 @@ function LoginPage(props) {
   var handleSubmitSignin = async () => {
     //ENVOIE DES INFOS AU BACK POUR VERIFICATION SI USER EXISTE DEJA //
 
-    const data = await fetch('http://polar-harbor-30765.herokuapp.com/sign-in', {
+    const data = await fetch('/sign-in', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: `emailFromFront=${emailSignIn}&lastnameFromFront=${lastNameSignIn}&roomNumberFromFront=${roomNumberSignIn}`
