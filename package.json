@@ -32,7 +32,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "https://polar-harbor-30765.herokuapp.com/",
   "eslintConfig": {
     "extends": [
       "react-app",
